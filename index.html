@@ -1,40 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Streaming Dashboard</title>
     <style>
-        .pelicula {
+        .card {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    width: 250px;
 }
-.vista {
+
+.watched {
     background-color: #d4edda;
     border-color: #28a745;
 }
+
+.not-watched {
+    background-color: #f8f9fa;
+}
+
 button {
     margin-top: 10px;
     padding: 5px 10px;
     cursor: pointer;
 }
-#peliculas {
+
+#movies-container {
     display: flex;
     flex-wrap: wrap;
 }
+
+.status {
+    font-weight: bold;
+}
     </style>
+   
 </head>
 
 <body>
-    <div class="container">
-        <h1>panel de control streaming</h1>
-        <div id="movie-container" class="movie-grid"></div>
-    </div>
-    <script src="/js/main.js"></script>
-
-    
+    <h1>Mis Películas</h1>
+    <div id="movies-container"></div>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
